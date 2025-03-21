@@ -7,14 +7,14 @@ import {
 } from '../store/slices/filtrSlice';
 
 export const useSelectors = () => {
-  const dispatch: any = useAppDispatch();
-  const sortedField: string = useAppSelector((state) => state.filter.sortBy);
-  const sortType: string = useAppSelector((state) => state.filter.sortType);
-  const filterByAdaptaBility: string = useAppSelector(
-    (state) => state.auth.filterByAdaptaBility
+  const dispatch = useAppDispatch();
+  const sortedField = useAppSelector((state) => state.filter.sortBy);
+  const sortType = useAppSelector((state) => state.filter.sortType);
+  const filterByAdaptaBility = useAppSelector(
+    (state) => state.filter.filterByAdaptaBility
   );
-  const filterByAffection: string = useAppSelector(
-    (state) => state.auth.filterByAdaptaBility
+  const filterByAffection = useAppSelector(
+    (state) => state.filter.filterByAffection
   );
 
   const changeData = (

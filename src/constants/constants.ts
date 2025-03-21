@@ -3,7 +3,7 @@ export const userValidData = {
   password: 'password',
 };
 
-export const COLORS: any = [
+export const COLORS: string[] = [
   '#0088FE',
   '#00C49F',
   '#FFBB28',

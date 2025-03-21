@@ -10,9 +10,9 @@ import { toast } from 'react-toastify';
 import { chechUserData } from '../utils/utils';
 
 export const useSignIn = () => {
-  const dispatch: any = useAppDispatch();
-  const error: string | null = useAppSelector((state) => state.auth.error);
-  const status: string = useAppSelector((state) => state.auth.status);
+  const dispatch = useAppDispatch();
+  const error = useAppSelector((state) => state.auth.error);
+  const status = useAppSelector((state) => state.auth.status);
 
   async function login({
     email,

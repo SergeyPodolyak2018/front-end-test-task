@@ -19,12 +19,12 @@ export const useHome = () => {
   const [lifeSpanData, setLifeSpanData] = React.useState<LineBarData[]>([]);
   const [filteredData, setFilteredData] = React.useState<CatModel[]>([]);
 
-  const sortedField: string = useAppSelector((state) => state.filter.sortBy);
-  const sortType: string = useAppSelector((state) => state.filter.sortType);
-  const filterByAdaptaBility: number = useAppSelector(
+  const sortedField = useAppSelector((state) => state.filter.sortBy);
+  const sortType = useAppSelector((state) => state.filter.sortType);
+  const filterByAdaptaBility = useAppSelector(
     (state) => state.filter.filterByAdaptaBility
   );
-  const filterByAffection: number = useAppSelector(
+  const filterByAffection = useAppSelector(
     (state) => state.filter.filterByAffection
   );
 

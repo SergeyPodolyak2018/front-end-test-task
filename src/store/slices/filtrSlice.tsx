@@ -2,14 +2,14 @@ import { createSlice } from '@reduxjs/toolkit';
 
 type InitialState = {
   sortBy: string;
-  sortType: 'ASC' | 'DESC';
+  sortType: 'asc' | 'desc';
   filterByAdaptaBility: number;
   filterByAffection: number;
 };
 
 const initialState: InitialState = {
   sortBy: 'name',
-  sortType: 'ASC',
+  sortType: 'asc',
   filterByAdaptaBility: 0,
   filterByAffection: 0,
 };

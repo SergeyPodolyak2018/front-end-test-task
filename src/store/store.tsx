@@ -21,10 +21,9 @@ const store = configureStore({
       .concat(catsApi.middleware),
 });
 
-export type RootState = ReturnType<any>;
-
-export const useAppDispatch = () => useDispatch();
-export const useAppSelector = <T extends any>(selector: (state: any) => T) =>
-  useSelector((state) => selector(state));
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
+export const useAppDispatch = useDispatch.withTypes<AppDispatch>();
+export const useAppSelector = useSelector.withTypes<RootState>();
 
 export { store };
