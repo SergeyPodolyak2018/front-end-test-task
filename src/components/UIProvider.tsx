@@ -1,26 +1,23 @@
-import React, { useEffect } from "react";
-import "preline/preline";
-import { IStaticMethods } from "preline/preline";
-import { useLocation } from "react-router";
+import { useEffect } from 'react';
+import 'preline/preline';
+import { IStaticMethods } from 'preline/preline';
+import { useLocation } from 'react-router';
+import { PropsChildren } from '../definitions/definitions';
 
 declare global {
-	interface Window {
-		HSStaticMethods: IStaticMethods;
-	}
+  interface Window {
+    HSStaticMethods: IStaticMethods;
+  }
 }
 
-type Props = {
-	children: React.ReactNode;
-};
+const UIProvider = ({ children }: PropsChildren) => {
+  const location = useLocation();
 
-const UIProvider = ({ children }: Props) => {
-	const location = useLocation();
+  useEffect(() => {
+    window.HSStaticMethods.autoInit();
+  }, [location.pathname]);
 
-	useEffect(() => {
-		window.HSStaticMethods.autoInit();
-	}, [location.pathname]);
-
-	return children;
+  return children;
 };
 
 export default UIProvider;

@@ -1,0 +1,13 @@
+export const userValidData = {
+  email: 'test@test.test',
+  password: 'password',
+};
+
+export const COLORS: any = [
+  '#0088FE',
+  '#00C49F',
+  '#FFBB28',
+  '#FF8042',
+  '#8884d8',
+  '#82ca9d',
+];
