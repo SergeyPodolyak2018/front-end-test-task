@@ -1,6 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { AuthState } from '../../definitions/definitions';
 
-const initialState = {
+const initialState: AuthState = {
   isAuthenticated: false,
   user: null,
   loading: false,
@@ -50,7 +51,7 @@ const authSlice = createSlice({
       state.data = {};
       state.user = null;
     },
-    logout(state) {
+    logout() {
       return initialState;
     },
     updateUserInfo(state, { payload }) {

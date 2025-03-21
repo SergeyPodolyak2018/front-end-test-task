@@ -53,6 +53,21 @@ export interface CatModel {
     url: string;
   };
 }
+export type UserInfo = {
+  email: string;
+  name: string;
+  id: number | null;
+  role: string;
+};
+export interface AuthState {
+  isAuthenticated: boolean;
+  user: { name: string; email: string } | null;
+  loading: boolean;
+  error: string | null;
+  data: UserInfo | {};
+  status: 'idle' | 'loading' | 'succeeded' | 'failed';
+  userInfo: UserInfo;
+}
 
 export type IndoorCount = { indoor: number; outdoor: number };
 export type LapCount = { lap: number; noLap: number };
