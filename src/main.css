@@ -1,1 +1,8 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+:root {
+  color-scheme: light dark;
+}
+#root {
+  background-color: light-dark(var(--color-white), var(--color-neutral-900));
+}

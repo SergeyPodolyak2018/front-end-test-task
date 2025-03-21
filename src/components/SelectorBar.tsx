@@ -10,7 +10,7 @@ const SelectorBar = () => {
     changeData,
   } = useSelectors();
   return (
-    <div className="flex flex-row bg-white border border-gray-200 shadow-2xs rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
+    <div className="flex flex-row mt-5 bg-white border border-gray-200 shadow-2xs rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
       <div className="mt-5 mb-5 ml-5 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <Selector
           id="sort_by"

@@ -35,7 +35,7 @@ const App = () => {
           </Routes>
         </BrowserRouter>
       </StoreProvider>
-      <ToastContainer />
+      <ToastContainer theme="colored" />
     </>
   );
 };

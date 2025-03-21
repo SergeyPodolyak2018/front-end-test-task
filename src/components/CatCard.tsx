@@ -3,9 +3,11 @@ import { getAdaptability, getAffection, getLifeSpan } from '../utils/utils';
 
 const CatCard = ({ cat }: { cat: CatModel }) => {
   return (
-    <div className="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl">
+    <div className="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700">
       <div className="p-4 md:p-6">
-        <h3 className="text-xl font-semibold text-gray-800 mb-2">{cat.name}</h3>
+        <h3 className="text-xl font-semibold text-gray-800 mb-2 dark:text-gray-200">
+          {cat.name}
+        </h3>
         <span className="block mb-1 text-xs font-semibold uppercase text-blue-600">
           Origin: {cat.origin || 'Unknown'}
         </span>

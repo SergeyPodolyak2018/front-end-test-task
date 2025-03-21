@@ -14,10 +14,10 @@ const SignInPage = () => {
   }
 
   return (
-    <div className="h-screen flex items-center justify-center bg-gray-50">
+    <div className="h-screen flex items-center justify-center bg-gray-50 dark:bg-neutral-900 dark:border-neutral-700">
       <div className="w-full max-w-md">
-        <div className="bg-white shadow-md rounded-xl p-8">
-          <h1 className="text-2xl font-bold text-gray-800 text-center mb-6">
+        <div className="bg-white shadow-md rounded-xl p-8 dark:bg-neutral-700 dark:border-neutral-800">
+          <h1 className="text-2xl font-bold text-gray-800 text-center mb-6 dark:text-gray-200">
             Sign In
           </h1>
 

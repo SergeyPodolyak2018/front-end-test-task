@@ -11,7 +11,7 @@ import {
 
 const PieTypeChart = (props: PieChartProps) => {
   return (
-    <div className="bg-white p-4 rounded-xl shadow-sm">
+    <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-200 dark:bg-neutral-900 dark:border-neutral-700">
       <h2 className="text-xl font-semibold mb-4">{props.header}</h2>
       <div className={`h-[${props.height}px]`}>
         <ResponsiveContainer>

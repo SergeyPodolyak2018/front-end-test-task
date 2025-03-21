@@ -32,7 +32,7 @@ const HomePage = () => {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 dark:text-white dark:bg-neutral-900">
       <h1 className="text-4xl font-bold mb-8">Cat Breeds Statistics</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <BarTypeChart
