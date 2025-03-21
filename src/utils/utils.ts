@@ -67,5 +67,9 @@ export const getOriginCount = (
       origin['Unknown'] = origin['Unknown'] + 1;
     }
   }
-  return Object.entries(origin).map((el) => ({ name: el[0], value: el[1] }));
+  const rez = Object.entries(origin).map((el) => ({
+    name: el[0],
+    value: el[1],
+  }));
+  return rez.sort((a, b) => b.value - a.value).slice(0, 9);
 };

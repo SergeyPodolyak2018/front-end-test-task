@@ -3,6 +3,7 @@ import CatCard from '../components/CatCard';
 import BarTypeChart from '../components/BarTypeChart';
 import PieTypeChart from '../components/PieTypeChart';
 import LineTypeChart from '../components/LineTypeChart';
+
 import SelectorBar from '../components/SelectorBar';
 
 const HomePage = () => {
@@ -44,12 +45,15 @@ const HomePage = () => {
           fill="#00C49F"
           data={affectionData}
         />
-        <PieTypeChart header="Top Origins" data={originData} height={400} />
+
         <PieTypeChart
           header="Indoor vs Outdoor Preference"
           data={indoorData}
           height={300}
         />
+
+        <PieTypeChart header="Top Origins" data={originData} height={300} />
+
         <PieTypeChart
           header="Lap Cat Distribution"
           data={lapData}
